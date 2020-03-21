@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://juego/pantallas/pantalla1/imagenes/tileset1_1.tres" type="TileSet" id=1]
-[ext_resource path="res://juego/pantallas/pantalla1/imagenes/australia.jpg" type="Texture" id=2]
+[ext_resource path="res://juego/pantallas/pantalla1/imagenes/fondo_1.jpg" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 71.046, 8 )
