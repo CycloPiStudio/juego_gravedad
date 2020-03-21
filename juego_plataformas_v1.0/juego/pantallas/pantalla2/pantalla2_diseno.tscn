@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://juego/pantallas/pantalla1/imagenes/tileset1_1.tres" type="TileSet" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 183.857, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 131.26 )
+
+[node name="pantalla2_diseno" type="Node2D"]
+scale = Vector2( 2, 2 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 22, 0, 19, 21, 0, 65536, 22, 0, 65555, 21, 0, 131072, 22, 0, 131091, 21, 0, 196608, 22, 0, 196627, 21, 0, 262144, 22, 0, 262163, 21, 0, 327680, 22, 0, 327699, 21, 0, 393216, 22, 0, 393235, 21, 0, 458752, 22, 0, 458771, 21, 0, 524288, 22, 0, 524307, 21, 0, 589824, 22, 0, 589843, 21, 0, 655360, 22, 0, 655379, 21, 0, 720896, 22, 0, 720915, 21, 0, 786432, 22, 0, 786451, 21, 0, 851968, 11, 0, 851969, 1, 0, 851970, 1, 0, 851971, 1, 0, 851972, 1, 0, 851973, 1, 0, 851974, 1, 0, 851975, 1, 0, 851976, 1, 0, 851977, 1, 0, 851978, 1, 0, 851979, 1, 0, 851980, 1, 0, 851981, 1, 0, 851982, 1, 0, 851983, 1, 0, 851984, 1, 0, 851985, 1, 0, 851986, 1, 0, 851987, 12, 0, 917504, 18, 0, 917505, 18, 0, 917506, 18, 0, 917507, 18, 0, 917508, 18, 0, 917509, 18, 0, 917510, 18, 0, 917511, 18, 0, 917512, 18, 0, 917513, 18, 0, 917514, 18, 0, 917515, 18, 0, 917516, 18, 0, 917517, 18, 0, 917518, 18, 0, 917519, 18, 0, 917520, 18, 0, 917521, 18, 0, 917522, 18, 0, 917523, 18, 0, 1769472, 22, 0 )
+
+[node name="escenario_col_no_transpa" type="StaticBody2D" parent="."]
+modulate = Color( 0.239216, 0.0352941, 0.0352941, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="escenario_col_no_transpa"]
+position = Vector2( 164.922, 226.577 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="escenario_col_no_transpa"]
+position = Vector2( -5.55337, 126.934 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="escenario_col_no_transpa"]
+position = Vector2( 325.034, 128.07 )
+shape = SubResource( 2 )
