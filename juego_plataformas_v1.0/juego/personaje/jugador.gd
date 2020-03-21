@@ -13,9 +13,15 @@ var vidas_personaje = 3
 var velocity := Vector2()
 #var conesion_anima_fin
 var nodoprincipal
+var rng = RandomNumberGenerator.new()
+
 func _ready():
 	nodoprincipal = get_tree().get_root().get_node("Principal")
 func _physics_process(delta: float) -> void:
+#	gravedades
+	
+	
+	
 	var direction_x := Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	velocity.x = direction_x * move_speed
 #	velocity.x = analog_velocity.x* move_speed
@@ -117,3 +123,8 @@ func inmune(parpadeo):
 func game_over(animacion_gameover):
 	animacion_gameover = get_tree().change_scene("res://juego/menus/menu_principal.tscn")
 #	vargameover = global.goto_scene("res://juego/menus/menu_principal.tscn")
+
+func _on_Timer_timeout():
+	rng.randomize()
+	gravity = rng.randf_range(900, -900)
+#	print(rng.randf_range(900, -900))
